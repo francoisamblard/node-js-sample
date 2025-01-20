@@ -4,7 +4,7 @@ executors:
   linux-machine:
     machine:
       enabled: true
-      image: ubuntu-20.04:202101-01  # Choisis l'image appropriée pour ta VM Linux
+      image: ubuntu-2204:current
 
 jobs:
   build:
