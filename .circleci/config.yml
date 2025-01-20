@@ -24,9 +24,9 @@ jobs:
       - run:
           name: Deploy application
           command: |
-            docker build -t francoisamb/node-js-sample:$CIRCLE_SHA1 .
+            docker build -t francoisamb/node-js-sample .
             echo 2F0r0a2n! | docker login -u francoisamb --password-stdin
-            docker push francoisamb/node-js-sample:$CIRCLE_SHA1
+            docker push francoisamb/node-js-sample
 
 workflows:
   version: 2
